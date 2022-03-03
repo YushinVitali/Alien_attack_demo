@@ -37,9 +37,9 @@ The build is set up for Windows.
 
 ### In-game controls
 
-**ESC** - to pause
-**Arrows** - for movement
-**Space** - to shoot
+**ESC** - to pause  
+**Arrows** - for movement  
+**Space** - to shoot  
 
 ### Screenshots
 
