@@ -1,0 +1,13 @@
+prefix=E:/sandbox/zlib1211/zlib-1.2.11
+exec_prefix=E:/sandbox/zlib1211/zlib-1.2.11
+libdir=E:/sandbox/zlib1211/zlib-1.2.11/lib
+sharedlibdir=E:/sandbox/zlib1211/zlib-1.2.11/lib
+includedir=E:/sandbox/zlib1211/zlib-1.2.11/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<stories>
+    <story name="Introduction" type="Text" textureId="level_1_text" level="0" font="karmatic.ttf" x="50" y="50" width="500" fontSize="20">
+        I'm glad to welcome you! It has come to our attention that the Alias Brothers and their gang are hiding on our planet.                          
+Your mission is to destroy these intergalactic thugs. They are hiding to the southeast near a lonely mountain. There's a cave there I think you can find them there.
+Your planet needs you!
+    </story>
+
+    <story name="Entrance to cave" type="Text" textureId="level_2_text" level="1" font="karmatic.ttf" x="50" y="50" width="500" fontSize="20">
+        We got word that one of the brothers was destroyed. Way to go, soldier! Move forward to find the second thug. Good luck!
+    </story>
+
+    <story name="Congratulations" type="Text" textureId="game_winning_1" level="2" font="karmatic.ttf" x="150" y="50" width="500" fontSize="40">
+        YOU WIN!!!
+    </story>
+
+    <story name="Entrance to cave" type="Text" textureId="game_winning_2" level="2" font="karmatic.ttf" x="50" y="150" width="500" fontSize="20">
+        You have accomplished the mission you were entrusted with, the intergalactic bandits are defeated!
+    </story>
+</stories>

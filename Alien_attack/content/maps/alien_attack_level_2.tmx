@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="150" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="40">
+ <tileset firstgid="1" source="blocks1.tsx"/>
+ <tileset firstgid="199" source="blocks2.tsx"/>
+ <objectgroup color="#0055ff" id="5" name="background_obj_layer">
+  <object id="2" name="background" type="ScrollingBackground" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="animSpeed" type="int" value="2"/>
+    <property name="filename" value="clouds.png"/>
+    <property name="frameCount" type="int" value="1"/>
+    <property name="textureHeight" type="int" value="480"/>
+    <property name="textureId" value="clouds"/>
+    <property name="textureWidth" type="int" value="640"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="2" name="background_tile_layer" width="150" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKgEAMBdHc/0pezkpYlnWNWAxfZuAVIc0/quqQPpqj9+gf5ug9yreK3qR8q+hNyreK3qRsd9G7lGsXvU25dtHblOkpep/ydKI3Kk8neqPydKI3Kks3eqdyvIneqgxX813DPf5Osnweew==
+  </data>
+ </layer>
+ <layer id="3" name="environment_tile_layer" width="150" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt08sNwjAMBuB2Aa50C2aCXWDEwgI8J0DQQ1MQklVVyHacuIH/k3yo1CS241TVbzhkWHdTnhFLW5tUl3DvXDVY0945d93Ql5R9/ybXPC9q2/3oLFnXMPe3xl039MW671xe8xyLzpJ1DXN/a9x1nnfrNc+xaM+sayj1rY2VereeUvYM9wEAAAAAAABgb1m/oxTrkOumoHz/EZ2np1MObYi94P9tyHk3MVef90HD0irBLE/l2wjOuSvPknow/jnLt305Gu13Gn1fQlzl6QCo9NH7JCM=
+  </data>
+ </layer>
+ <layer id="1" name="collision_tile_layer" width="150" height="15">
+  <properties>
+   <property name="collidable" value=""/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztlEkKwkAQRTtr9Qjq2hFdO55A8AaCh4kxuYCgrh3v6BfsTUODYqrT3fwHD0ItqorUT1Kl1A5mcA9zWMCUddZ/qJtkhv9g9rJZZn/iltyiicSNys6TrTepDlueNCHeJ8SdCSGEEEIIIf7RSZTqwl5S9SYkJibI0xTOmCtv6OMWAzgM/CarwPePjTnusYBLwbvU0LsOG4IzNgK9XewdM2vh99ZE/xZsC86R+F+Zex8+ku/YOvgeR5gxDixXb/TeOlM+ZusCr/AG7/ABn6x7XT/CEzwbzz7t+QKWWdHp
+  </data>
+ </layer>
+ <objectgroup color="#aa0000" id="4" name="player_obj_layer">
+  <object id="1" name="player1" type="Player" x="70" y="252" width="32" height="32">
+   <properties>
+    <property name="filename" value="helicopter.png"/>
+    <property name="frameCount" type="int" value="5"/>
+    <property name="textureHeight" type="int" value="55"/>
+    <property name="textureId" value="player"/>
+    <property name="textureWidth" type="int" value="128"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="enemies_on_map_obj_layer">
+  <object id="6" name="ShotGlider1" type="ShotGlider" x="631" y="323.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="7" name="ShotGlider2" type="ShotGlider" x="699.333" y="143.833" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="8" name="ShotGlider3" type="ShotGlider" x="764.667" y="243.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="9" name="ShotGlider4" type="ShotGlider" x="828.333" y="383.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="10" name="ShotGlider2" type="ShotGlider" x="1699" y="131.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="11" name="ShotGlider3" type="ShotGlider" x="1703" y="316.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="12" name="ShotGlider1" type="ShotGlider" x="1436.34" y="350.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="13" name="ShotGlider4" type="ShotGlider" x="1439.67" y="192.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="14" name="ShotGlider3" type="ShotGlider" x="1985" y="184.833" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="15" name="ShotGlider4" type="ShotGlider" x="2268.33" y="247.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="16" name="ShotGlider1" type="ShotGlider" x="2083.66" y="314.833" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="17" name="ShotGlider2" type="ShotGlider" x="2178.33" y="98.1663" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="18" name="ShotGlider2" type="ShotGlider" x="2473.33" y="214.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="19" name="ShotGlider3" type="ShotGlider" x="2566.67" y="116.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="20" name="ShotGlider1" type="ShotGlider" x="2590.34" y="347.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="21" name="ShotGlider4" type="ShotGlider" x="2699.67" y="222.166" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy2.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="36"/>
+    <property name="textureId" value="enemy2"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="22" name="Glider1" type="Glider" x="3026.67" y="96.1667" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="23" name="Glider2" type="Glider" x="3188.33" y="218.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="24" name="Glider3" type="Glider" x="3268.67" y="349.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="25" name="Glider1" type="Glider" x="3555.67" y="254.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="26" name="Glider2" type="Glider" x="3682.67" y="144.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="27" name="Glider3" type="Glider" x="3621.67" y="210.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="34"/>
+    <property name="textureId" value="enemy1"/>
+    <property name="textureWidth" value="38"/>
+   </properties>
+  </object>
+  <object id="28" name="Boss" type="Level1Boss" x="4093.33" y="237.833" width="32" height="32">
+   <properties>
+    <property name="filename" value="boss1.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="230"/>
+    <property name="textureId" value="boss"/>
+    <property name="textureWidth" value="183"/>
+   </properties>
+  </object>
+  <object id="31" name="Turret2" type="Turret" x="385" y="253.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="turret.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="52"/>
+    <property name="textureId" value="turret"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="32" name="RoofTurret1" type="RoofTurret" x="1115.33" y="224.167" width="32" height="32">
+   <properties>
+    <property name="filename" value="turret.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="52"/>
+    <property name="textureId" value="turret"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="33" name="RoofTurret1" type="RoofTurret" x="1793.33" y="252.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="turret.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="52"/>
+    <property name="textureId" value="turret"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="34" name="Turret2" type="Turret" x="1214" y="222.5" width="32" height="32">
+   <properties>
+    <property name="filename" value="turret.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="52"/>
+    <property name="textureId" value="turret"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="35" name="RoofTurret1" type="RoofTurret" x="2785.33" y="96.8333" width="32" height="32">
+   <properties>
+    <property name="filename" value="turret.png"/>
+    <property name="frameCount" value="1"/>
+    <property name="textureHeight" value="52"/>
+    <property name="textureId" value="turret"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="36" name="Eskeletor1" type="Eskeletor" x="2568" y="-48" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy3.png"/>
+    <property name="frameCount" value="3"/>
+    <property name="textureHeight" value="35"/>
+    <property name="textureId" value="enemy3"/>
+    <property name="textureWidth" value="35"/>
+   </properties>
+  </object>
+  <object id="37" name="Eskeletor1" type="Eskeletor" x="3137.33" y="-54.6667" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy3.png"/>
+    <property name="frameCount" value="3"/>
+    <property name="textureHeight" value="35"/>
+    <property name="textureId" value="enemy3"/>
+    <property name="textureWidth" value="35"/>
+   </properties>
+  </object>
+  <object id="38" name="Eskeletor1" type="Eskeletor" x="1821.33" y="-42.6667" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy3.png"/>
+    <property name="frameCount" value="3"/>
+    <property name="textureHeight" value="35"/>
+    <property name="textureId" value="enemy3"/>
+    <property name="textureWidth" value="35"/>
+   </properties>
+  </object>
+  <object id="39" name="Eskeletor1" type="Eskeletor" x="752" y="-56" width="32" height="32">
+   <properties>
+    <property name="filename" value="enemy3.png"/>
+    <property name="frameCount" value="3"/>
+    <property name="textureHeight" value="35"/>
+    <property name="textureId" value="enemy3"/>
+    <property name="textureWidth" value="35"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="enemies_behind_map_obj_layer"/>
+</map>
