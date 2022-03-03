@@ -54,6 +54,8 @@ The build is set up for Windows.
 
 **Gameplay**
 
+![alt text](screenshots/start_game.gif "Start game")​
+
 ![alt text](screenshots/level_1.png "Level 1")​
 
 ![alt text](screenshots/level_2.png "Level 2")​
