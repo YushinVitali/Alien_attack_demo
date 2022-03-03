@@ -17,6 +17,7 @@ set(CMAKE_SOURCE_DIR				${CMAKE_CURRENT_SOURCE_DIR}/source)
 # Path for output binary files
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY	${CMAKE_CURRENT_SOURCE_DIR}/bin)
 set(CMAKE_MODULE_PATH				${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/")
+set(CMAKE_LIBRARY_PATH				${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 # Creating the main goal of the project
 add_executable(${PROJECT_NAME})
@@ -44,22 +45,22 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 
 
 # Adding the Logger project
-add_subdirectory(logger)
+add_subdirectory("${CMAKE_LIBRARY_PATH}/logger")
 target_link_libraries(${PROJECT_NAME}
 	PUBLIC logger)
 
 # Adding the Base64 project
-add_subdirectory(base64)
+add_subdirectory("${CMAKE_LIBRARY_PATH}/base64")
 target_link_libraries(${PROJECT_NAME}
 	PUBLIC base64)
 
 # Adding the TinyXML project
-add_subdirectory(tinyxml)
+add_subdirectory("${CMAKE_LIBRARY_PATH}/tinyxml")
 target_link_libraries(${PROJECT_NAME}
 	PUBLIC tinyxml)
 
 # Adding the SDL2 library
-set(SDL2_PATH "${CMAKE_CURRENT_SOURCE_DIR}/SDL2")
+set(SDL2_PATH "${CMAKE_LIBRARY_PATH}/SDL2")
 find_package(SDL2 REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	${SDL2_LIBRARY})
@@ -67,7 +68,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 	${SDL2_INCLUDE_DIR})
 
 # Adding the SDL2_image library
-set(SDL2_IMAGE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/SDL2_image")
+set(SDL2_IMAGE_PATH "${CMAKE_LIBRARY_PATH}/SDL2_image")
 find_package(SDL2_image REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	${SDL2_IMAGE_LIBRARY})
@@ -75,7 +76,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 	${SDL2_IMAGE_INCLUDE_DIR})
 
 # Adding the SDL2_mixer library
-set(SDL2_MIXER_PATH "${CMAKE_CURRENT_SOURCE_DIR}/SDL2_mixer")
+set(SDL2_MIXER_PATH "${CMAKE_LIBRARY_PATH}/SDL2_mixer")
 find_package(SDL2_mixer REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	${SDL2_MIXER_LIBRARY})
@@ -83,7 +84,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 	${SDL2_MIXER_INCLUDE_DIR})
 
 # Adding the SDL2_ttf library
-set(SDL2_TTF_PATH "${CMAKE_CURRENT_SOURCE_DIR}/SDL2_ttf")
+set(SDL2_TTF_PATH "${CMAKE_LIBRARY_PATH}/SDL2_ttf")
 find_package(SDL2_ttf REQUIRED)
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	${SDL2_TTF_LIBRARY})
@@ -92,7 +93,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 
 
 # Adding the Zlib library
-set(ZLIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/zlib")
+set(ZLIB_PATH "${CMAKE_LIBRARY_PATH}/zlib")
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	"${ZLIB_PATH}/lib/libzlib.dll.a")
 target_include_directories(${PROJECT_NAME} PUBLIC
