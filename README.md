@@ -29,6 +29,10 @@ The build is set up for Windows.
 | TinyXML       |         2.6.2 |
 | ZLib          |             - |
 
+## Additional implemented subprojects
+
+**Logger** is a self-written library for logging information.
+
 ## About the demo
 
 ### In-game controls
