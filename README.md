@@ -4,8 +4,9 @@
 
 The demo consists of two levels. Each level has up to 5 types of enemies and 1 boss.
 
-The demo is implemented based on SDL2.
-This app has been created for training purposes only!
+The demo is implemented based on SDL2.  
+The **Tiled** application was used to create the maps.  
+This app has been created for training purposes only!  
 
 The build is set up for Windows.
 
